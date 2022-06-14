@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap');
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 100%;
+	font-size: 16px;
+	line-height: 1.5;
+	background: #f0f4fb;
+	-webkt-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.site-container {
+	margin: 2rem auto;
+	max-width: calc(100%-80px);
+}
+.article-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(265px, 1fr));
+	gap: 2rem;
+}
+.article-image{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.article-image img{
+	max-width: 110%;
+	height: auto;
+	border-radius: 20px 20px 0 0;
+}
+.article-card{
+	background: white;
+	border-radius: 20px;
+	transition: 0.3s;
+}
+.article-card:hover {
+	box-shadow: 0 4px 40px 0 rgba(34, 68, 123, 0.2);
+	cursor: pointer;
+}
+.article-content{
+	padding: 2rem;
+}
+.article-content .card-category{
+	font-size: 0.0875rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-weight: 600;
+	color: #6b82a7;
+	display: block;
+	text-decoration: none;
+}
+.article-content .card-title{
+	margin: 1rem 0;
+	color: #22447b;
+}
+.article-content-execerpt{
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: #6b82a7;
+	margin: 0;
+}
+.article-card button {
+	width: 50%;
+	margin: auto;
+	background-color: #21211f;
+	padding: .9rem .3rem;
+	border-radius: 6px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.article-card button a {
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	font-size: 17px;
+	
+	
+}
+@media screen and (min-width: 768px){
+	.site-container {
+		max-width: 608px;
+	}
+	.article-card {
+		display: grid;
+		grid-template-rows: 190px 1fr;
+	}
+}
+@media screen and (min-width: 1280px){
+	.site-container {
+		max-width: 1154px;
+	}
+}

@@ -1,0 +1,8 @@
+body {
+    background: #2a2925;
+    background: linear-gradient(to right, #030303, #4b4b4b);
+}
+.bg {
+    background-image: url(../imagen/picky\ blinders.jpg);
+    background-position: center center;
+}

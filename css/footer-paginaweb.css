@@ -1,0 +1,13 @@
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css');
+
+footer {
+	background-color:#1b2a4e;
+	height: 50%;
+  color: white;
+  padding: 15px;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
